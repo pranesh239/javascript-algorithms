@@ -1,6 +1,6 @@
 # js problems, Data-Structures, Algorithms :mag:
 
-> “The problem contains the solution.” - Michael Bierut
+> “The problem contains the solution.” <br /> - Michael Bierut
 
 <img src="https://octodex.github.com/images/labtocat.png" alt="alt text" width="250">
 
@@ -36,3 +36,4 @@ To run test
 ```bash
 yarn test
 ```
+###### *Feel free to raise PRs* :blush:
