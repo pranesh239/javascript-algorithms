@@ -1,6 +1,6 @@
 # js problems, Data-Structures, Algorithms :mag:
 
-> “The problem contains the solution.” - Michael Bierut
+> “The problem contains the solution.” <br /> - Michael Bierut
 
 <img src="https://octodex.github.com/images/labtocat.png" alt="alt text" width="250">
 
@@ -14,6 +14,7 @@ Completed Algorithms:
 - Array chunk
 - Maximum character
 - Sentence capitalize
+- Steps
 
 Work in progress:
 
@@ -36,3 +37,5 @@ To run test
 ```bash
 yarn test
 ```
+
+###### _Feel free to raise PRs_ :blush:
