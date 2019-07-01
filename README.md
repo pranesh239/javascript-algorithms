@@ -19,6 +19,7 @@ Completed Algorithms:
 Work in progress:
 
 - FizzBuzz (test)
+- Anagram (Definition)
 
 ## Built with:
 
