@@ -15,6 +15,7 @@ Completed Algorithms:
 - Maximum character
 - Sentence capitalize
 - Steps
+- Fibonacci (with **Memoize** function!)
 
 Work in progress:
 
