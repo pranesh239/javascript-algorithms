@@ -1,5 +1,7 @@
 # js problems, Data-Structures, Algorithms :mag:
 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 > “The problem contains the solution.” <br /> - Michael Bierut
 
 <img src="https://octodex.github.com/images/labtocat.png" alt="alt text" width="250">
@@ -21,6 +23,7 @@ Work in progress:
 
 - FizzBuzz (test)
 - Anagram (Definition)
+- Add Babel and ESLint to use ES6 functionalities and to check best practices
 
 ## Built with:
 
@@ -39,5 +42,3 @@ To run test
 ```bash
 yarn test
 ```
-
-###### _Feel free to raise PRs_ :blush:
