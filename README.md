@@ -18,6 +18,8 @@ Completed Algorithms:
 - Sentence capitalize
 - Steps
 - Fibonacci (with **Memoize** function!)
+- Data Structure: Queue (with **weave**)
+- Data Structure: LinkedList
 
 Work in progress:
 
