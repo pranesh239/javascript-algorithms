@@ -1,5 +1,5 @@
 /*
-
+Implementation of LinkedList data structure.
 */
 
 class Node {
@@ -85,6 +85,53 @@ class LinkedList {
       currentNode = currentNode.next;
     }
 
+  }
+
+  getAt(index){
+    if(this.size() < 0) return null;
+    
+    if (index >= this.size())  return null;
+
+    if(index === 0) return this.head;
+
+    let counter = 1;
+    let currentNode = this.head.next;
+
+    while(currentNode){
+      if(counter === index){
+        return currentNode;
+      }
+      currentNode = currentNode.next;
+      counter++;
+    }
+  }
+
+  removeAt(index){
+    if (this.size() < 0) { return null; }
+
+    if(index === 0) {this.head = this.head.next; return;}
+
+
+    let previousNode = this.getAt(index-1);
+    if(!previousNode || !previousNode.next){
+      return null;
+    }
+    previousNode.next = previousNode.next.next;
+  }
+
+  insertAt(data,index){
+
+    const nodeToInsert = new Node(data);
+
+    if(index === 0 ){
+      nodeToInsert.next = this.head;
+      this.head = nodeToInsert;
+      return;
+    }
+
+    let previousNode = this.getAt(index-1) || this.getLast();
+    nodeToInsert.next = previousNode.next;
+    previousNode.next = nodeToInsert;
   }
 
   clear(){

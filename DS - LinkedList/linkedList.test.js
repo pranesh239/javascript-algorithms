@@ -62,5 +62,38 @@ describe('LinkedList', () => {
     list.insertLast('e');
     expect(list.getLast()).toEqual({data: 'e', next: null});
   });
+
+  it('should return the node at specified index of the list, when the index is passed with getAt method', () => {
+    list.insertFirst('b');
+    expect(list.getAt(1)).toEqual(n1);
+    list.insertFirst('c');
+    expect(list.getAt(1)).toEqual(n2);
+    expect(list.getAt(10)).toBeNull();
+    list.insertFirst('d');
+    list.insertFirst('e');
+    list.insertFirst('f');
+    expect(list.getAt(5)).toEqual(n1);
+  })
+
+  it('should remove the node at specified index of the list, when the index is passed with removeAt method', () => {
+    list.insertFirst('b');
+    list.insertFirst('c');
+    list.insertFirst('d');
+    list.insertFirst('e');
+    list.insertFirst('f');
+    list.removeAt(3)
+    expect(list.getAt(3)).toEqual(n2);
+  })
+
+  it('should insert the node at specified index of the list, when the index and data is passed with insertAt method', () => {
+    list.insertFirst('b');
+    list.insertFirst('c');
+    list.insertFirst('d');
+    list.insertFirst('e');
+    list.insertFirst('f');
+    list.insertAt('ABC',4);
+    expect(list.getAt(4)).toEqual({data: 'ABC', next: n2});
+  })
+
 });
 
