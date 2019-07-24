@@ -3,6 +3,10 @@
     "jest": "^24.8.0"
   },
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "lint": "eslint"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0"
   }
 }
