@@ -19,7 +19,7 @@ Completed Algorithms:
 - Steps
 - Fibonacci (with **Memoize** function!)
 - Data Structure: Queue (with **weave**)
-- Data Structure: LinkedList
+- Data Structure: LinkedList (with **getMiddle & isCircular** methods!)
 
 Work in progress:
 

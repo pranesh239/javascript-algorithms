@@ -108,4 +108,28 @@ describe("LinkedList", () => {
 
     expect(list.getLast()).toEqual({ data: "a2", next: null });
   });
+
+  it("should perform given functionality in forEach for all nodes", () => {
+    list.insertFirst("b");
+    list.insertFirst("c");
+
+    expect(list.getMiddle()).toEqual(n2);
+  });
+
+  it("should say whether the list is circular or not", () => {
+    let b = new Node("b");
+    let c = new Node("c");
+
+    list.head.next = b;
+    b.next = c;
+    c.next = list.head;
+
+    expect(list.isCircular()).toBeTruthy();
+
+    list.clear();
+    list.insertFirst("b");
+    list.insertFirst("c");
+
+    expect(list.isCircular()).toBeFalsy();
+  });
 });

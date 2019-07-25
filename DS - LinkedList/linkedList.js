@@ -158,6 +158,33 @@ class LinkedList {
       counter++;
     }
   }
+
+  getMiddle() {
+    let slow = this.head;
+    let fast = this.head;
+
+    while (fast.next && fast.next.next) {
+      slow = slow.next;
+      fast = fast.next.next;
+    }
+
+    return slow;
+  }
+
+  isCircular() {
+    let p1 = this.head;
+    let p2 = this.head;
+
+    while (p2.next && p2.next.next) {
+      p1 = p1.next;
+      p2 = p2.next.next;
+      if (p1 === p2) {
+        return true;
+      }
+    }
+
+    return false;
+  }
 }
 
 exports.Node = Node;
