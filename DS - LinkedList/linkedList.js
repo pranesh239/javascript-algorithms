@@ -185,6 +185,24 @@ class LinkedList {
 
     return false;
   }
+
+  fromLast(n) {
+    let p1 = this.head;
+    let p2 = this.head;
+    let counter = n;
+
+    while (counter > 0) {
+      p2 = p2.next;
+      counter--;
+    }
+
+    while (p2.next !== null) {
+      p2 = p2.next;
+      p1 = p1.next;
+    }
+
+    return p1;
+  }
 }
 
 exports.Node = Node;

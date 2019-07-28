@@ -132,4 +132,14 @@ describe("LinkedList", () => {
 
     expect(list.isCircular()).toBeFalsy();
   });
+
+  it("should return nth node from last", () => {
+    list.insertFirst("b");
+    list.insertFirst("c");
+    list.insertFirst("d");
+    list.insertFirst("e");
+    list.insertFirst("f");
+
+    expect(list.fromLast(1)).toEqual(n2);
+  });
 });
