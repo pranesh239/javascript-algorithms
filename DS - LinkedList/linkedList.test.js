@@ -5,6 +5,7 @@ describe("LinkedList", () => {
 
   const n1 = new Node("a");
   const n2 = new Node("b", n1);
+  const n3 = new Node("c", n2);
 
   beforeEach(() => {
     list = new LinkedList();
@@ -141,5 +142,18 @@ describe("LinkedList", () => {
     list.insertFirst("f");
 
     expect(list.fromLast(1)).toEqual(n2);
+  });
+
+  it("should reverse the given linked list", () => {
+    list.insertFirst("b");
+    list.insertFirst("c");
+    list.reverseList();
+
+    const reversedList = new LinkedList();
+    reversedList.insertFirst("c");
+    reversedList.insertFirst("b");
+    reversedList.insertFirst("a");
+
+    // expect(list.head).toEqual(reversedList.head);
   });
 });
