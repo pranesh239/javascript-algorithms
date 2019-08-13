@@ -19,10 +19,11 @@ Completed Algorithms:
 - Steps
 - Fibonacci (with **Memoize** function!)
 - Data Structure: Queue (with **weave**)
-- Data Structure: LinkedList (with **getMiddle & isCircular** methods!)
+- Data Structure: LinkedList (with **getMiddle, isCircular and reverse** methods!)
 
 Work in progress:
 
+- Data Structure: Tree
 - FizzBuzz (test)
 - Anagram (Definition)
 - Add Babel and ESLint to use ES6 functionalities and to check best practices
