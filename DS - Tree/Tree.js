@@ -31,6 +31,16 @@ class Tree {
       fn(currentEl);
     }
   }
+
+  traverseDepthFirst(fn) {
+    let currentNode = [this.root];
+
+    while (currentNode.length) {
+      const currentEl = currentNode.unshift();
+      currentNode.push(...currentEl.children);
+      fn(currentEl);
+    }
+  }
 }
 
 exports.Tree = Tree;
