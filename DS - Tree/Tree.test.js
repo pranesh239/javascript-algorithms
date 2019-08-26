@@ -24,7 +24,7 @@ describe("Tree", () => {
     expect(n1.children).toHaveLength(0);
   });
 
-  it("should traverse thr given tree in Breadth First manner and should execute the given function on every node", () => {
+  it("should traverse the given tree in Breadth First manner and should execute the given function on every node", () => {
     n1.add(2);
     n1.add(3);
     n1.add(4);
@@ -44,5 +44,35 @@ describe("Tree", () => {
     };
 
     expect(t1).toEqual(expectedData);
+  });
+
+  it("should traverse the given tree in Depth First manner and should execute the given function on every node", () => {
+    n1.add(2);
+    n1.add(3);
+    n1.add(4);
+    const t1 = new Tree(n1);
+    t1.traverseDepthFirst(node => {
+      node.data = node.data + 10;
+    });
+    const expectedData = {
+      root: {
+        data: 11,
+        children: [
+          { data: 12, children: [] },
+          { data: 13, children: [] },
+          { data: 14, children: [] }
+        ]
+      }
+    };
+
+    expect(t1).toEqual(expectedData);
+  });
+  it("should give the length of the given items in their every levels", () => {
+    n1.add(2);
+    n1.add(3);
+    n1.add(4);
+    const t1 = new Tree(n1);
+    t1.levelWidth();
+    expect(t1.levelWidth()).toEqual([1, 3]);
   });
 });

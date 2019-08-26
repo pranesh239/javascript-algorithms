@@ -36,10 +36,29 @@ class Tree {
     let currentNode = [this.root];
 
     while (currentNode.length) {
-      const currentEl = currentNode.unshift();
-      currentNode.push(...currentEl.children);
+      const currentEl = currentNode.shift();
+      currentNode.unshift(...currentEl.children);
       fn(currentEl);
     }
+  }
+
+  levelWidth() {
+    let currentNode = [this.root];
+    let lengthArray = [];
+
+    while (currentNode.length) {
+      lengthArray.push(currentNode.length);
+
+      let temp = [];
+
+      currentNode.forEach(node => {
+        temp.push(...node.children);
+      });
+
+      currentNode = temp;
+    }
+
+    return lengthArray;
   }
 }
 
