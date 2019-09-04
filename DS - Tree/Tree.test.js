@@ -72,7 +72,6 @@ describe("Tree", () => {
     n1.add(3);
     n1.add(4);
     const t1 = new Tree(n1);
-    t1.levelWidth();
     expect(t1.levelWidth()).toEqual([1, 3]);
   });
 });

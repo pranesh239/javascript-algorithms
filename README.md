@@ -20,6 +20,7 @@ Completed Algorithms:
 - Fibonacci (with **Memoize** function!)
 - Data Structure: Queue (with **weave**)
 - Data Structure: LinkedList (with **getMiddle, isCircular and reverse** methods!)
+- Data Structure: Binary search tree
 
 Work in progress:
 
