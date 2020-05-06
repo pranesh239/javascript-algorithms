@@ -28,6 +28,7 @@ Work in progress:
 - FizzBuzz (test)
 - Anagram (Definition)
 - Add Babel and ESLint to use ES6 functionalities and to check best practices
+- Trie
 
 ## Built with:
 
